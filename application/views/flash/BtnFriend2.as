@@ -1,0 +1,1 @@
+﻿package  {		import flash.display.SimpleButton;			public class BtnFriend2 extends SimpleButton {						public function BtnFriend2() {			// constructor code					}	}	}

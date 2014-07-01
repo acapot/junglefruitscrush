@@ -1,0 +1,546 @@
+html, body, div, span, applet,
+object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details,
+embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video 							{ margin: 0; padding: 0; border: 0; font-size:100%; font:inherit; /*vertical-align:baseline;*/ }
+body {height:800px;}
+
+#container	{
+	
+	margin-top:20px;
+	width:735px;
+	height:850px;
+	/*background-color:#0C3;*/
+	-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+border-style:solid;
+border-color:#C00;
+border-width:2px;
+background-color:#0F0;
+
+
+	
+}
+
+#header	{
+	background:url(../img/header.jpg)  no-repeat ;
+	background-size:cover;
+	width:100%;
+	height:15%;
+-webkit-border-top-left-radius: 15px;
+-webkit-border-top-right-radius: 15px;
+-moz-border-radius-topleft: 15px;
+-moz-border-radius-topright: 15px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+/*border-color:#FECFD0;
+border-style:solid;
+border-width:2px;	
+overflow:hidden;*/
+
+}
+#toolbar	{
+	width:100%;
+	height:8%;
+	background-image:url(../img/toolbar.jpg);
+	background-size:cover;	
+	
+}
+#game-wrapper	{
+	padding-top:5%;
+	background:#D51318;
+	height:56%;
+	margin:0;
+}
+
+#footer	{
+
+	background-image:url(../img/footer.jpg);
+	background-size:cover;
+	width:100%;
+	height:20%;
+	
+	-webkit-border-bottom-left-radius: 15px;
+-webkit-border-bottom-right-radius: 15px;
+-moz-border-radius-bottomleft: 15px;
+-moz-border-radius-bottomright: 15px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+/*border-color:#FECFD0;
+border-style:solid;
+border-width:2px;*/	
+	
+}
+
+a.appstore	{
+	margin-left:100px;
+	margin-top:30px;
+	display:inline-block;
+	height:100px;
+	width:250px;
+	background-image:url(../img/download-from-appstore.png);
+	background-size:100%;
+	background-repeat:no-repeat;	
+}
+
+a.googleplay	{
+	display:inline-block;
+	margin-left:50px;
+	height:100px;
+	width:250px;
+	background-image:url(../img/googleplay.png);
+	background-size:100%;
+}
+
+#categories,.answerbutton	{
+	display:block;
+	float:left;
+	background-color:#83BA30;
+	height:100px;
+	width:200px;
+
+	margin:5px;	
+	position:relative;
+	text-align:center;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow:  3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+        box-shadow:  3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+		
+		-webkit-animation-name: show;
+		-webkit-animation-iteration-count: once; 
+    	-webkit-animation-timing-function: ease-in;
+   		-webkit-animation-duration: 0.5s;
+
+}
+#categories{
+	font-size:18px;
+	font-family:"Comic Sans MS", cursive;
+	font-weight:bold;
+}
+#right	{
+	display:block;
+	height:100px;
+	width:200px;
+
+	
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+
+	background-color:#0F3;
+	opacity:1;
+	
+	-webkit-animation-name: blink;
+		-webkit-animation-iteration-count: once; 
+    	-webkit-animation-timing-function: ease-in;
+   		-webkit-animation-duration: 0.5s;
+	
+}
+
+
+
+#wrong	{
+	display:block;
+position:relative;
+	height:100px;
+	width:200px;
+
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+
+	background-color:#F00;
+	opacity:1;
+	
+	-webkit-animation-name: blink;
+		-webkit-animation-iteration-count: once; 
+    	-webkit-animation-timing-function: ease-in;
+   		-webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes blink{
+	0%{
+		opacity:1;
+	}
+	25%{
+		opacity:0.5;
+	}
+	50%{
+		opacity:1;
+	}
+	75%{
+		opacity:0.5;
+	}
+	100%{
+		opacity:1;
+	}
+	
+}
+
+h4	{
+	padding-top:20px;
+	font-size:18px;
+	font-family:"Comic Sans MS", cursive;
+	font-weight:bold;	
+}
+
+h5	{
+	line-height:100px;
+	text-align:center;
+	font-size:18px;
+	font-family:"Comic Sans MS", cursive;
+	font-weight:bold;	
+}
+@-webkit-keyframes show{
+	0%{
+		top:400px;
+		opacity:0;
+	}
+	80%{
+		opacity:0.1;
+		top:5px;
+	}
+	100%{
+		top:0;
+		opacity:1.0;
+		position:absolute;
+		
+		
+	}
+}
+.answerbutton	{
+	background-color:#FFA579;	
+}
+
+.answerbutton:hover{
+	background-color:#FBDFCE;
+	cursor:pointer; cursor: hand;
+	
+}
+
+button#categories:hover	{
+	background-color:#B5DB66;
+	cursor:hand; cursor:pointer;
+	
+}
+
+.buttons	{
+	display:block;
+	float:left;
+	
+	background-color:#83BA30;
+	height:100px;
+	width:200px;
+	position:relative;
+	text-align:center;
+	border:solid 2px black;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow:  3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+        box-shadow:  3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+	
+}
+
+.buttons:hover{
+	background-color:#B5DB66;
+cursor:hand; cursor:pointer;
+}
+
+#button-wrap{
+width:100%;
+height:100px;	
+margin-left:20%;
+	margin-right:auto;
+}
+
+#chooseCat	{
+	background-image:url(../img/choose.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	height:150px;
+	width:400px;
+ margin-left:auto;
+ margin-right:auto;	
+}
+
+#partialResult{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:5px;
+	width:320px;
+	height:40px;
+		
+}
+
+#spanpack{
+	height:24px;
+	width:130px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.greyResult{
+	margin-left:5px;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border:solid 2px black;
+background-color:#CCC;
+}
+
+#showuser	{
+	text-align:right;
+	display:inline-block;
+	margin-top:20px;
+	float:left;
+	width:200px;
+	height:100%;
+	color:#000;
+	font-weight:bold;
+	font-size:14px;
+	font-family:"Comic Sans MS";
+
+	
+}
+
+#profile	{
+	
+width:300px;
+height:50px;
+margin-left:0;
+margin-right:auto;	
+}
+
+#profile_pic{
+	margin:6px;
+float:left;
+width:50px;
+height:50px;	
+}
+
+#question	{
+	border-style:inset;
+	border-color:#CCC;
+	border-width:3px;	
+	margin-left:auto;
+	margin-right:auto;
+height:200px;
+width:300px;
+background-color:#FFF;
+font-size:18px;
+text-align:center;
+line-height:180px;
+padding:4px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+cursor:pointer; cursor: hand;
+-webkit-box-shadow:  3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+        
+        box-shadow:  3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+		
+		-webkit-animation-name: flip;
+		-webkit-animation-iteration-count: once; 
+    	-webkit-animation-timing-function:ease;
+   		-webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes flip{
+	0%{
+		-webkit-transform: rotateY(0deg);
+		-webkit-transform-style:preserve-3d;	
+	}
+	100%{
+		-webkit-transform: rotateY(360deg);
+		-webkit-transform-style:preserve-3d;
+		;
+	}
+	
+}
+
+
+#showcats,#answers	{
+	margin-top:5px;
+	height:220px;
+	width:420px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+
+
+
+/*Footern*/
+#question-card2	{
+width:200px;
+height:200px;
+background-color:#06F;
+visibility:visible;	
+}
+#flip	{
+	background-size:cover;
+	background-color:#FFF;
+	height:200px;
+	width:200px;	
+}
+
+#showquestion	{
+margin-left:auto;
+margin-right:auto;
+height:200px;
+width:300px;
+background-color:#00F;
+background-image:url(../img/quiz_bg.jpg);
+background-size:cover;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+cursor:pointer; cursor: hand;	
+-webkit-box-shadow:  3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+        
+        box-shadow:  3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+#showquestion1	{
+perspective:1000;	
+}
+
+#challenges-wrapper{
+margin-top:10px;
+margin-left:auto;
+margin-right:auto;
+width:700px;
+height:400px;
+/*background-color:#CCC;*/
+padding:2px;	
+border:1px black solid;
+}
+
+.newchallenge,.challengestatus{
+	display:block;
+	background-color:#83BA30;
+	height:40px;
+	width:100px;
+	float:left;
+	margin-left:10px;
+	position:relative;
+	text-align:center;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow:  3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+        box-shadow:  3px 5px 10px 5px rgba(0, 0, 0, 0.5);
+		margin-bottom:5px;
+}
+
+.newchallenge:hover,.challengestatus:hover{
+	background-color:#B5DB66;
+cursor:hand; cursor:pointer;	
+}
+
+
+
+.challenges,.challenges1,.challenges2{
+	/*display:block;*/
+	float:left;
+
+min-width: 530px;
+height:90px;	
+background-color:#F00;
+margin-bottom:5px;
+}
+
+.challenges1{
+background-color:#F90;	
+}
+
+.challenges2{
+background-color:#3C6;	
+}
+
+.shownames{
+margin-left:auto;
+margin-right:auto;
+clear:both;
+text-align:center;	
+}
+
+.friends{
+	background-color:#666;
+	overflow:scroll;
+height:350px;
+width:350px;
+	
+}
+
+.friend{
+	display:block;
+	float:left;
+	background-color:#F00;
+height:40px;
+width:300px;	
+margin-bottom:5px;
+}
+
+.friend_pic{
+	width:40px;
+	height:40px;
+	float:left;
+
+}
+.friend_pic img{
+width:40px;
+height:40px;	
+}
+
+.friend-wrapper,.challenges-group	{
+	width:700px;
+	height:50px;
+}
+
+.challenges-group{
+height:100px;	
+}
+
+/*#right	{
+	height:100%;
+	width:100%;
+	background-color:#0F3;
+	opacity:0.5;
+	
+}
+
+#wrong	{
+	height:100%;
+	width:100%;
+	background-color:#F00;
+	opacity:0.5;
+}*/
+
+
+#scrollbar1 { width: 700px; /*margin: 20px 0 10px;*/ }
+#scrollbar1 .viewport { background-color:#333; width: 680px; height: 350px; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar1 .scrollbar{ background: transparent url(../img/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar1 .track { background: transparent url(../img/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background: transparent url(../img/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { background: transparent url(../img/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }

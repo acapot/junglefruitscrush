@@ -1,0 +1,1 @@
+﻿package  {		import flash.display.MovieClip;			public class BtnMap extends MovieClip {						public function BtnMap(posX:Number, posY:Number) {			// constructor code			this.x = posX;			this.y = posY;					}	}	}
